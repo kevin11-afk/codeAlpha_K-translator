@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>K-Translate</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- HEADER -->
+    <h1>🌍 K-Translate</h1>
+
+    <!-- TWO PANELS -->
+    <div class="panels">
+      <!-- INPUT -->
+      <textarea
+        id="inputText"
+        placeholder="Type something magical..."
+      ></textarea>
+
+      <!-- OUTPUT -->
+      <div id="outputText" class="output-box">
+        Translation will appear here ✨
+      </div>
+    </div>
+
+    <!-- CONTROLS -->
+    <div class="controls">
+      <select id="sourceLang">
+        <option value="auto">Auto Detect</option>
+      </select>
+
+      <button class="swap-btn" onclick="swapLang()">⇄</button>
+
+      <select id="targetLang">
+        <option value="en">English</option>
+      </select>
+    </div>
+
+    <!-- TRANSLATE BUTTON -->
+    <button class="translate-btn" onclick="translateText()">
+      🚀 Translate
+    </button>
+
+  </div>
+
+  <!-- SCRIPT -->
+  <script src="app.js"></script>
+</body>
+</html>
